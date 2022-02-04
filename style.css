@@ -1,0 +1,101 @@
+.wrapper {
+    margin: 100px;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: gray;
+    position: relative;
+    z-index: -999;
+}
+
+.circle--lefttop {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 425px;
+    left: 110px;
+}
+.circle--righttop {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 425px;
+    left: 290px;
+}
+
+.circle--top {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 390px;
+    left: 200px;
+}
+
+.circle--bottom {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 635px;
+    left: 200px;
+}
+
+.circle--leftbottom {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 600px;
+    left: 115px;
+}
+
+.circle--rightbottom {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 600px;
+    left: 285px;
+}
+
+.circle--inside {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 485px;
+    left: 175px;
+}
+
+.circle--left {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 510px;
+    left: 75px;
+}
+
+.circle--right {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    top: 510px;
+    left: 325px;
+}
