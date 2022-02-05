@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 24pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+}
+
+.container {
+    width: 100%;
+    height: 937px;
+}
+
+.sidebar {
+    width: 25%;
+    height: 750px;
+    float: left;
+    background-color: rgb(0, 243, 130);
+    
+}
+
+.header {
+    width: 75%;
+    background-color: rgb(0, 217, 255);
+    height: 150px;
+    float: left;
+}
+
+.content {
+    width: 75%;
+    height: 600px;
+    background-color: rgb(255, 255, 129);
+    float: left;
+}
+
+.copyright {
+    width: 75%;
+    height: 187px;
+    background-color: coral;
+    float: left;
+}
+
+.logo {
+    width: 25%;
+    height: 187px;
+    background-color: plum;
+    float: left;
+}
