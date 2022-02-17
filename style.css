@@ -1,101 +1,122 @@
-.wrapper {
+.wrapper-first {
     margin: 100px;
+    position: relative;
 }
 
-.circle {
+.wrapper-second {
+    position: relative;
+    transform: translate(500px, -350px);
+}
+
+.circle-root {
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    background-color: gray;
-    position: relative;
-    z-index: -999;
+    background-color: gray;    
 }
 
-.circle--lefttop {
+.circle-second-root {
+    transform: translate(0px, 0px);
+}
+
+.circle-minor {
     border-radius: 50%;
     width: 50px;
     height: 50px;
     background-color: white;
-    position: absolute;
-    top: 425px;
-    left: 110px;
-}
-.circle--righttop {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    top: 425px;
-    left: 290px;
 }
 
-.circle--top {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: white;
+.circle-first--lefttop {
     position: absolute;
-    top: 390px;
-    left: 200px;
+    top: 15px;
+    left: 10px;
 }
 
-.circle--bottom {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    top: 635px;
-    left: 200px;
+.circle-second--lefttop {
+    transform: translate(5px, -235px);
 }
 
-.circle--leftbottom {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: white;
+.circle-first--righttop {
     position: absolute;
-    top: 600px;
-    left: 115px;
+    top: 15px;
+    left: 190px;
 }
 
-.circle--rightbottom {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    position: absolute;
-    top: 600px;
-    left: 285px;
+.circle-second--righttop {
+    transform: translate(190px, -290px);
 }
 
-.circle--inside {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    background-color: white;
+.circle-first--top {
     position: absolute;
-    top: 485px;
-    left: 175px;
+    top: -20px;
+    left: 100px;
 }
 
-.circle--left {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: white;
+.circle-second--top {
+    transform: translate(100px, -625px);
+}
+
+.circle-first--bottom {
     position: absolute;
-    top: 510px;
+    top: 225px;
+    left: 100px;
+}
+
+.circle-second--bottom {
+    transform: translate(100px, -325px);
+}
+
+.circle-first--leftbottom {
+    position: absolute;
+    top: 190px;
+    left: 15px;
+}
+
+.circle-second--leftbottom {
+    transform: translate(5px, -265px);
+}
+
+.circle-first--rightbottom {
+    position: absolute;
+    top: 190px;
+    left: 185px;
+}
+
+.circle-second--rightbottom {
+    transform: translate(190px, -315px);
+}
+
+.circle-first--inside-root {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.circle-first--inside {    
+    position: absolute;
+    top: 75px;
     left: 75px;
 }
 
-.circle--right {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: white;
+.circle-second--inside {
+    transform: translate(75px, -575px);
+}
+
+.circle-first--left {
     position: absolute;
-    top: 510px;
-    left: 325px;
+    top: 100px;
+    left: -25px;
+}
+
+.circle-second--left {
+    transform: translate(-25px, -255px);
+}
+
+.circle-first--right {
+    position: absolute;
+    top: 100px;
+    left: 225px;
+}
+
+.circle-second--right {
+    transform: translate(225px, -305px);
 }
