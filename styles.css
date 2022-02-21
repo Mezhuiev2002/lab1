@@ -1,53 +1,225 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-size: 24pt;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
+}
+
+@import url(./header.css);
+@import url(./title.css);
+@import url(./primary.css);
+@import url(./secondary.css);
+@import url(./third.css);
+@import url(./footer.css);
+
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+.desc--mobile {
+    color: rgb(102, 102, 102);
+    font-family: 'Gentium Basic', serif;
+    font-weight: 200;
+    margin-top: 20px;
+    font-size: 19pt;
+    line-height: 2em;
+    display: none;
+}
+
+
+@media screen and (max-width: 1500px){
+    nav{
+        margin-left: 3%;
+    }  
+}
+
+@media screen and (max-width: 1240px){
+    nav{
+        margin-left: 3%;
+    }  
+    .search--two {
+        margin-top: -20% !important;
+    } 
+    .secondary--content button {
+        font-size: 15pt !important;
+    }
+    .template--name {
+        font-size: 18pt !important;
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .search--two {
+        margin-top: -5% !important;
+    } 
+    .secondary--content button {
+        font-size: 12pt !important;
+    }
+    .secondary--content input {
+        font-size: 17pt !important;
+    }
+    .post--name {
+        font-size: 17pt !important;
+    }
+    .recent--format, .categories, .template--text {
+        font-size: 14pt !important;
+    }
+    .slot--image {
+        width: 80% !important;
+        height: 20% !important;
+    }
+    .topnav a{
+        display: none;
+    }
+    .topnav a.icon{
+        float: left;
+        margin-top: -17px;
+        display: block;
+        color: #000;
+        font-size: 25px;
+    }
+    nav{
+        width: 10%;
+    }
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    header .topnav.responsive{
+        height: 340px;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        left: -200px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .net--f {
+        margin-right: 1px;
+    }
+}
+
+@media screen and (max-width: 710px){
+    .title {
+        margin: 30px 0px !important;
+    }
+    .template--content--mobile {
+        display: none !important;
+    }
+    .right {
+        margin-left: 3%;
+    }
+    .footer {
+        display: none !important;
+    }
+    .divider--grey {
+        margin-top: -1%;
+        z-index: -999;
+    }
+    .desc--mobile {
+        display: inherit;
+    }
+    .left--top {
+        display: none !important;
+    }
+    .template--content {
+        margin-top: 3% !important;
+    }
+    .desc {
+        display: none;
+    }
+    .standard {
+        font-size: 25pt !important;
+    }
+    .read--more {
+        display: none;
+    }
+    .primary--content {
+        flex-direction: column;
+    }
+    .secondary--content {
+        flex-direction: column;
+    }
+    .image--slot {
+        height: 300px !important;
+    }
+    .about {
+        margin-left: 3%;
+    }
+    .topnav a{
+        display: none;
+    }
+    img {
+        display: none;
+    }
+    .post--format {
+        margin-top: 20px !important;
+    }
+    .recent {
+        margin-left: 3%;
+    }
     
+    .third--content {
+        flex-direction: column;
+    }
+    .topnav a.icon{
+        float: left;
+        margin-top: -17px;
+        display: block;
+        color: #000;
+        font-size: 25px;
+    }
+    nav{
+        width: 10%;
+    }
+    .topnav.responsive{
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    header .topnav.responsive{
+        height: 340px;
+    }
+    .topnav.responsive a.icon{
+        position: absolute;
+        top: -50px;
+        left: -200px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .title p {
+        font-size: 32pt !important;
+    }
+    .title h3 {
+        font-size: 18pt !important;
+    }
+
 }
 
-.container {
-    height: 100vh;
-    overflow-y: hidden;
-}
 
-.top--container {
-    display: flex;
-    height: 77.5%;
-}
 
-.picture {
-    
-}
 
-.content {
+
+main{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.header {
-    background-color: aqua;
-    flex: 1;
-}
 
-.hello {
-    background-color: yellow;
-    flex: 5;
-}
-
-.footer {
-    display: flex;
-    height: 22.5%;
-}
-
-.maxomka {
-    background-color: coral;
-    flex: 4.25;
-}
-
-.jerry {
-    background-color: plum;
-    flex: 1;
-}
+    

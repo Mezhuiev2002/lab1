@@ -1,0 +1,20 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.title p {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 64pt;
+    color: blueviolet;
+}
+
+.title h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 26pt;
+}

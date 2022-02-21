@@ -1,0 +1,60 @@
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    margin-top: 50px;
+    margin-left: 3%;
+}
+
+.topnav a{
+    color: rgba(0, 0, 0, 0.74);
+    padding: 15px 20px;
+    font-size: 14px;
+    font-weight: thin;
+}
+.topnav a:hover{
+    border-bottom: 4px solid hsl(41, 96%, 42%);
+}
+.topnav .icon{
+    display: none;
+}
+
+.right--header {
+    margin-top: 50px;
+    margin-right: 3%;
+}
+
+.buttonIn {
+    width: 300px;
+    position: relative;
+    margin-top: -2px;
+}
+.right--header input {
+    margin: 0px;
+    padding: 0px;
+    width: 70%;
+    outline: none;
+    height: 30px;
+    border-color: transparent;
+    font-size: 18pt;
+}
+  
+.right--header button {
+    position: absolute;
+    top: 0;
+    border-radius: 5px;
+    right: 13%;
+    z-index: 2;
+    border: none;
+    top: -2px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    transform: translateX(2px);
+}
+
+  

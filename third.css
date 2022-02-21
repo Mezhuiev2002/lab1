@@ -1,0 +1,133 @@
+.third--content {
+    display: flex;
+}
+.left {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+.left--top {
+    height: 381px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+}
+.older {
+    height: 150px;
+    display: flex;
+    margin-left: 3%;
+    margin-top: 30px;
+}
+.third--divider {
+    width: 12%;
+    background-color: blueviolet;
+    height: 2px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    visibility: visible;
+}
+
+.categories {
+    font-weight: 350;
+    color: rgb(102, 102, 102);
+    font-size: 19pt;
+    margin-top: 20px;
+}
+.template--content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.template--content--mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.templates--third {
+    display: flex;
+    height: 740px;
+}
+.template--text {
+    font-weight: 350;
+    color: rgb(102, 102, 102);
+    font-size: 19pt;
+}
+.categ {
+    color: rgb(102, 102, 102);
+    font-family: 'Gentium Basic';
+    font-size: 23pt; 
+    font-weight: 500; 
+}
+.categ--two {
+    color: rgb(102, 102, 102);
+    font-family: 'Gentium Basic';
+    font-size: 23pt; 
+    font-weight: 500; 
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.space--two {
+    height: 20px;
+}
+.slot--image {
+    background: url(./assets/ad.png);
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+}
+.page {
+    color: rgb(102, 102, 102);
+    font-family: 'Gentium Basic';
+    font-size: 23pt; 
+    font-weight: 500; 
+    margin-right: 17%;
+}
+.template--name {
+    color: rgb(102, 102, 102);
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 25pt; 
+    font-weight: 500; 
+}
+.space {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.date--third {
+    color: rgb(102, 102, 102);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 12pt;
+}
+.image--slot--third {
+    background: url(./assets/velik.png);
+    background-size: cover;
+    width: 80%;
+    height: 45%;
+}
+.desc--three {
+    color: rgb(102, 102, 102);
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 20px;
+    font-size: 14pt;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.5;
+}
+.image--slot--four {
+    background: url(./assets/sidebar.png);
+    background-size: cover;
+    width: 80%;
+    height: 45%;
+}
