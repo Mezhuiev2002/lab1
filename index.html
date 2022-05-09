@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="description" content="My personal website containing useful information about me">
     <meta name="keywords" content="HTML, resume, website, KPI, FICT">  
+    <link rel="stylesheet" href="style.css">
     <title>Межуєв М. Д. ІА-93</title>
 </head>
 <body>
-    <h2>Межуєв Максим Дмитрович.</h2>
-    <p>Місце та дата народження: 3 грудня 2002р. м. Прилуки, Чернігівська обл.</p>
+    <h2 id="title">Межуєв Максим Дмитрович.</h2>
+    <p class="place">Місце та дата народження: 3 грудня 2002р. м. Прилуки, Чернігівська обл.</p>
     <p>Освіта: Прилуцька гімназія №1 м. Прилуки</p>
     <p style="padding-left: 55px;">Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»</p>
     <p>Хоббі:</p>
@@ -31,10 +32,13 @@
        завбільшки 607 км² та включає 21 адміністративний район. Головна окраса столиці — Мадридський собор.<br>
        Населення міста — 3 273 049 мешканців
     </p>
-    <p>
-        <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B4%D1%80%D0%B8%D0%B4"><img src="assets/madrid.jpg" width="750" 
-        height="400" alt="Мадрид"></a>
-    </p>
-
+    <div class="images">
+        <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B4%D1%80%D0%B8%D0%B4"><img class="default-size show" src="assets/madrid.jpg" alt="Мадрид" id="city"></a>
+    </div>
+    <button  class="add">Додати</button>
+    <button  class="remove">Видалити</button>
+    <button  class="increase">Збільшити</button>
+    <button  class="decrease">Зменшити</button>
+    <script src="index.js"></script>
 </body>
 </html>

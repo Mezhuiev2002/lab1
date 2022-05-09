@@ -1,0 +1,22 @@
+.delete {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.default-size {
+    width: 750px;
+    height: 400px;
+}
+
+.small-size {
+    height: 250px;
+    width: 500px;
+}
+
+.big-size {
+    width: 1050px;
+    height: 800px;
+}
