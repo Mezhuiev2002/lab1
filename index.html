@@ -8,37 +8,89 @@
     <title>Межуєв М. Д. ІА-93</title>
 </head>
 <body>
-    <h2 id="title">Межуєв Максим Дмитрович.</h2>
-    <p class="place">Місце та дата народження: 3 грудня 2002р. м. Прилуки, Чернігівська обл.</p>
-    <p>Освіта: Прилуцька гімназія №1 м. Прилуки</p>
-    <p style="padding-left: 55px;">Національний технічний університет України «Київський політехнічний інститут імені Ігоря Сікорського»</p>
-    <p>Хоббі:</p>
-    <ul>
-        <li>Футбол</li>
-        <li>Спорт</li>
-        <li>Комп'ютерні ігри</li>
-    </ul>
-    <p>Улюблені фільми:</p>
-    <ol>
-        <li>"Interstellar"</li>
-        <li>"Бегущий в лабиринте"</li>
-        <li>"Кингсмен"</li>
-        <li>"Железный человек"</li>
-        <li>"Железный человек II"</li>
-    </ol>
-    <p>Мадри́д — столиця та найбільше місто Іспанії, адміністративний центр автономної спільноти Мадрид.<br>
-       Розташоване в центральній частині Піренейського півострова. Безпосередньо
-       місто розташоване на території<br>
-       завбільшки 607 км² та включає 21 адміністративний район. Головна окраса столиці — Мадридський собор.<br>
-       Населення міста — 3 273 049 мешканців
-    </p>
-    <div class="images">
-        <a href="https://uk.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B4%D1%80%D0%B8%D0%B4"><img class="default-size show" src="assets/madrid.jpg" alt="Мадрид" id="city"></a>
-    </div>
-    <button  class="add">Додати</button>
-    <button  class="remove">Видалити</button>
-    <button  class="increase">Збільшити</button>
-    <button  class="decrease">Зменшити</button>
+    <wrapper> 
+        <div class="form">
+            <div class="title">Welcome</div>
+            <div class="subtitle">Форма для заповнення</div>
+            <div class="input-container ic1">
+              <input id="name" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">Ім'я</label>
+            </div>
+            <div class="input-container ic2">
+              <input id="group" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="lastname" class="placeholder">Група</label>
+            </div>
+            <div class="input-container ic2">
+                <input id="address" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="lastname" class="placeholder">Адреса</label>
+              </div>
+              <div class="input-container ic2">
+                <input id="num" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="lastname" class="placeholder">Телефон</label>
+              </div>
+            <div class="input-container ic2">
+              <input id="mail" class="input" type="text" placeholder=" " />
+              <div class="cut cut-short"></div>
+              <label for="text" class="placeholder">E-mail</label>
+            </div>
+            <input type="submit" class="submit" value="Send"></input>
+          </div>
+    </wrapper>
+    <input type="color" id="color" onchange="setColor()">
+    <table>
+        <tr>
+            <td id="c1">1</td>
+            <td>2</td>
+            <td id="c3">3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td id="c7">7</td>
+            <td>8</td>
+            <td id="c9">9</td>
+            <td>10</td>
+            <td id="c11">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td id="c15">15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td>20</td>
+            <td id="c21">21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>25</td>
+            <td>26</td>
+            <td id="c27">27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>32</td>
+            <td id="c33">33</td>
+            <td>34</td>
+            <td>35</td>
+            <td>36</td>
+        </tr>
+    </table>
     <script src="index.js"></script>
 </body>
 </html>

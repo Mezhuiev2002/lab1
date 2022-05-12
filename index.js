@@ -1,67 +1,63 @@
-const titl = document.getElementById('title');
+const titl = document.getElementById('c1');
 
-titl.onclick = function() {
+titl.onmouseover = function() {
     let randomColor = '#'+ Math.floor(Math.random() * 19777215).toString(16);
     let randColor = '#'+ Math.floor(Math.random() * 19777215).toString(16);
     titl.style.backgroundColor = randColor;
     titl.style.color = randomColor;
 }
 
-const place = document.querySelector('.place');
+const cell = document.getElementById('c7');
+const cell2 = document.getElementById('c9');
+const cell3 = document.getElementById('c11');
 
-place.onclick = function() {
-    let randomColor = '#'+ Math.floor(Math.random() * 19777215).toString(16);
-    let randColor = '#'+ Math.floor(Math.random() * 19777215).toString(16);
-    place.style.backgroundColor = randColor;
-    place.style.color = randomColor;
+
+function setColor() {
+    const color = document.getElementById("color");
 }
 
-const image = document.querySelector('#city');
-document.querySelector('.add').addEventListener('click', () => add());
-document.querySelector('.remove').addEventListener('click', () => remove());
-document.querySelector('.increase').addEventListener('click', () => increase());
-document.querySelector('.decrease').addEventListener('click', () => decrease());
-
-function increase() {
-    if(image.classList.contains('small-size')) {
-        image.classList.remove('small-size');
-        image.classList.add('default-size');
-    }
-    else if(image.classList.contains('default-size')) {
-        image.classList.remove('default-size');
-        image.classList.add('big-size');
-    }
-    else {
-        alert("You cannot increase the image anymore!");
-        return
-    }
+cell.onclick = function() {
+    cell.style.background = color.value;
 }
 
-function decrease() {
-    if(image.classList.contains('big-size')) {
-        image.classList.remove('big-size');
-        image.classList.add('default-size');
-    }
-    else if(image.classList.contains('default-size')) {
-        image.classList.remove('default-size');
-        image.classList.add('small-size');
-    }
-    else {
-        alert("You cannot decrease the image anymore!");
-        return
-    }
+cell.ondblclick = function() {
+    cell.style.background = color.value;
+    cell2.style.background = color.value;
+    cell3.style.background = color.value;
 }
 
-function remove() {
-    if(image.classList.contains('show')) {
-        image.classList.remove('show');
-        image.classList.add('delete');
-    }
-}
 
-function add() {
-    if(image.classList.contains('delete')) {
-        image.classList.remove('delete');
-        image.classList.add('show');
+let regName = /[А-Я-ІЄ][а-я-іє]{1,20}\s[А-Я-ІЄ]\.[А-Я-ІЄ]\./,
+    regGroup = /[А-Я-ІЄ]{2}\-[1-9]{2}/,
+    regNum = /\([0-9]{3}\)\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}/,
+    regAdress = /[м]\.\s[А-Я-ІЄ][а-я-іє]{1,20}/,
+    regMail = /[a-z0-9]+@[a-z]+\.[a-z]{2,3}/;
+
+
+let inpName = document.querySelector("#name");
+let inpGroup = document.querySelector("#group");
+let inpAdress = document.querySelector("#address");
+let inpNum = document.querySelector("#num");
+let inpMail = document.querySelector("#mail");
+
+document.querySelector(".submit").onclick = function(e){
+    e.preventDefault();
+    if (regName.test(inpName.value) && regGroup.test(inpGroup.value) && 
+        regAdress.test(inpAdress.value) && regMail.test(inpMail.value) && 
+        regNum.test(inpNum.value) ) {
+        console.log("corect");
+        submit();
+    }else {
+        console.log("error");
     }
+
+};
+
+function submit(){
+    confirm(`Ім'я: ${inpName.value}
+Група: ${inpGroup.value}
+Адреса: ${inpAdress.value}
+Номер телефону: ${inpNum.value}
+E-mail: ${inpMail.value}
+`)
 }
