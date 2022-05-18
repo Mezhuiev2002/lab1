@@ -1,22 +1,38 @@
-.delete {
-    display: none;
+.table {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 65%;
 }
 
-.show {
-    display: block;
+.header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
-
-.default-size {
-    width: 750px;
-    height: 400px;
+wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
-.small-size {
-    height: 250px;
-    width: 500px;
+.card {
+    background: rgb(255, 183, 175);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
-
-.big-size {
-    width: 1050px;
-    height: 800px;
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    background: rgb(255, 183, 175);
+    font-size: 24px;
+    border: 0;
+    color: white;
+    font-weight: 900;
 }
